@@ -74,6 +74,20 @@ body{
     opacity:0.89;
 } */
 
+#home h2{
+    overflow:hidden;
+    white-space:nowwrap;
+    margin:0px auto;
+    letter-spacing:0.15em;
+    animation:typing 1.5s steps(30,end);
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:100%}
+}
+
+
 #home h1{
     color:rgb(241, 235, 235);
     text-align: center;
