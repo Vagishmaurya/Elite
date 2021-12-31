@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* Navigation Bar */
+
+#navbar{
+    background-color: black;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    opacity: 0.7;
+    
+}
+body{
+    background-color: cornflowerblue;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 
+#home::before{ 
+    content: "";
+    position: absolute;
+    height: 700px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+} */
+
+#home h1{
+    color:rgb(241, 235, 235);
+    text-align: center;
+    
+    font-family: 'Bree Serif', serif;
+    animation-name: widthAnimate;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes widthAnimate{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+#home p{
+    color:rgb(250, 246, 246);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    
+}
+#services .box{ 
+    border: 2px solid brown;
+    border-radius: 10%;
+    padding: 10px;
+    background: #ffffff21;
+    margin: 20px;
+    background-color: white;
+}
+
+/* #services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+} */
+
+figcaption{
+    text-align: center;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+/* #Mentor-section{ 
+    position: absolute;
+} */
+
+/* #Mentor-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index:-1;
+ opacity: 0.3;
+} */
+
+#Mentor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#contact1 img{
+  width: 100px;
+}
+.Mentor-item{
+    padding: 8px;
+}
+.contact1{
+    padding: 8px;
+}
+
+#Mentor img{
+    width: 200px ;
+}
+
+
+/* Contact Section */
+/* #contact{
+    position: ;
+} */
+/* #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+/* } 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+} */
+#contact1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+.box:hover{
+    transform: scale(1.15);
+}
+#logo{
+    background-image: url(./elitelogo1.jpg);
+    height: 20px;
+    width: 70px;
+    
+    transform: scale(2);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:500px) {
+    #logo{
+        background-image: url(./elitelogo1.jpg);
+        width: 30px;
+        height: 25px;
+    }
+    #navbar ul{
+        flex-wrap: wrap;
+    }
+    #navbar li a{
+        font-size: 14px;
+    }
+    #home h1{
+        font-size: 24px;
+    }
+    #home p{
+        font-size: 16px;
+    }
+    #services{
+        flex-direction: column;
+    }
+    #Mentor img{
+        width: 150px;
+        height: 150px;
+    }
+    #Mentor{
+        flex-direction: column;
+    }
+    /* #Mentor-section{
+        width: 100%;
+        height: 100px;
+    } */
+}
